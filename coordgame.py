@@ -1,4 +1,4 @@
-##########
+############
 ##Plot the list of x0 and x1
 
 import matplotlib.pyplot as plt
@@ -10,7 +10,7 @@ fig, ax = plt.subplots()
 players = [0,1] 
 gamename = '2coordgame'
 
-trials = 51
+trials = 201
 current_x0 = random.uniform(0,1)
 current_x1 = random.uniform(0,1)
 

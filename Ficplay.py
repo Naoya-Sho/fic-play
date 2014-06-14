@@ -1,4 +1,4 @@
-##########
+############
 ##Plot the list of x0 and x1
 
 import matplotlib.pyplot as plt
