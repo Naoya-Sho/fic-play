@@ -1,7 +1,8 @@
 ﻿fic-play
 ========
-
+</h1>
 Fictitious play
+</h1>
 
 プログラムの出力結果 <br>
 
