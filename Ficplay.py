@@ -10,8 +10,8 @@ fig, ax = plt.subplots()
 players = [0,1] # not used yet
 
 trials = 51
-current_x0 = 0.5
-current_x1 = 0.5
+current_x0 = random.uniform(0,1)
+current_x1 = random.uniform(0,1)
 
 # setting up the payoff function
 
