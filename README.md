@@ -1,10 +1,12 @@
-﻿fic-play
+﻿Fictitious Play
 ========
-<h1>
-Fictitious play
-</h1>
+<h2>
+Fictitious play のプログラム
+</h2>
 
+<h3>
 プログラムの出力結果 <br>
+</h3>
 
 <strong>Matching Pennies：<strong> <br>
 <img src="Matpenny200.png" alt="MP_x0_values" width="330"/>　　
