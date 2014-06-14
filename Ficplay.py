@@ -71,7 +71,7 @@ xaxis = range(trials)
 ax.plot(xaxis, x0_values, 'b-',label = 'Player0 x')
 ax.plot(xaxis, x1_values, 'r-',label = 'Player1 x')
 ax.legend()
-
+plt.title('ts = '+ str(trials - 1), color='k')
 plt.savefig(gamename + str(trials-1) + '.png',transparent=True, bbox_inches='tight', pad_inches=0)
 plt.close()
 
