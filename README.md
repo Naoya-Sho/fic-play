@@ -16,4 +16,5 @@ Matching Pennies：<br>
 <img src="2coordgame50.png" alt="CO_x0_values50" width="330"/>　　
 <img src="2coordgame200.png" alt="CO_x0_values200" width="330"/>
 <br>
+<br>
 <img src="2coordgame_hist50_200.png" alt="CO_histogram" width="330"/>
