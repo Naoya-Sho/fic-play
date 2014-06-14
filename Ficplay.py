@@ -1,3 +1,6 @@
+##########
+##Plot the list of x0 and x1
+
 import matplotlib.pyplot as plt
 import random as random
 from __future__ import division
@@ -63,9 +66,10 @@ for i in range(trials):
 
 
 xaxis = range(trials)
-ax.plot(xaxis, x0_values, 'b-')
-ax.plot(xaxis, x1_values, 'r-')
-xaxis = range(trials)
+ax.plot(xaxis, x0_values, 'b-',label = 'Player0 x')
+ax.plot(xaxis, x1_values, 'r-',label = 'Player1 x')
+ax.legend()
+
 plt.savefig('Matpenny' + str(trials-1) + '.png',transparent=True, bbox_inches='tight', pad_inches=0)
 plt.close()
 
@@ -95,8 +99,10 @@ for j in range(iter + 1):
 
 # plot the list in histogram
 n, bins, patches = plt.hist(terminalx0, 15, normed = 1)
-plt.setp(patches, 'facecolor', 'g')
 
+plt.title('ts = '+ str(trials - 1)+ ','+' N = '+ str(iter), color='k')
+
+plt.setp(patches, 'facecolor', 'g')
 plt.savefig('Matpenny_hist' + str(trials-1) +'_'+ str(iter) +'.png',transparent=True, bbox_inches='tight', pad_inches=0)
 plt.show()
 
