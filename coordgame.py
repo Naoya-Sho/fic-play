@@ -7,27 +7,37 @@ from __future__ import division
 
 fig, ax = plt.subplots()
 
-players = [0,1] # not used yet
-gamename = 'Matpenny'
+players = [0,1] 
+gamename = '2coordgame'
 
-
-trials = 201
+trials = 51
 current_x0 = random.uniform(0,1)
 current_x1 = random.uniform(0,1)
 
 # setting up the payoff function
 
-def pay0(a,b):
-    if a == b:
-        return 1
-    else:
-        return -1
 
-def pay1(a,b):
-    if a != b:
-        return 1
-    else:
-        return -1
+
+def pay0(a,b):
+    if a == 0 and b == 0:
+        return 4
+    elif a == 0 and b == 1:
+        return 0
+    elif a == 1 and b == 0:
+        return 3
+    elif a == 1 and b == 1:
+        return 2
+
+def pay1(b,a):
+    if a == 0 and b == 0:
+        return 4
+    elif a == 0 and b == 1:
+        return 0
+    elif a == 1 and b == 0:
+        return 3
+    elif a == 1 and b == 1:
+        return 2
+
 
 # best response function using the payoff function 
 def br0(x):
