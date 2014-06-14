@@ -6,13 +6,14 @@ Fictitious play
 プログラムの出力結果 <br>
 
 Matching Pennies：<br>
-<img src="Matpenny200.png" alt="MP_x0_values" width="300"/>　　
-<img src="Matpenny_hist50_200.png" alt="MP_histogram" width="300"/>
+<img src="Matpenny200.png" alt="MP_x0_values" width="330"/>　　
+<img src="Matpenny_hist50_200.png" alt="MP_histogram" width="330"/>
 
 <br>
 <br>
 
 調整ゲーム:<br>
-<img src="2coordgame50.png" alt="CO_x0_values50" width="300"/>　　
-<img src="2coordgame200.png" alt="CO_x0_values200" width="300"/>　　
-<img src="2coordgame_hist50_200.png" alt="CO_histogram" width="300"/>
+<img src="2coordgame50.png" alt="CO_x0_values50" width="330"/>　　
+<img src="2coordgame200.png" alt="CO_x0_values200" width="330"/>
+<br>
+<img src="2coordgame_hist50_200.png" alt="CO_histogram" width="330"/>
