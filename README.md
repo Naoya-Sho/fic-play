@@ -1,6 +1,6 @@
 ﻿fic-play
 ========
-</h1>
+<h1>
 Fictitious play
 </h1>
 
