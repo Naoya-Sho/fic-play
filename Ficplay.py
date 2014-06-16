@@ -11,7 +11,7 @@ players = [0,1] # not used yet
 gamename = 'Matpenny'
 
 
-trials = 1001
+trials = 201
 current_x0 = random.uniform(0,1)
 current_x1 = random.uniform(0,1)
 
@@ -79,7 +79,7 @@ plt.close()
 ## plot the histogram and save the figure
 # make a list of x0(T-1)
 
-iter = 100
+iter = 200
 terminalx0 = []
 
 for j in range(iter + 1):
@@ -102,7 +102,9 @@ for j in range(iter + 1):
     terminalx0.append(x0_values[trials - 1])
 
 # plot the list in histogram
-n, bins, patches = plt.hist(terminalx0, 15, normed = 1)
+
+plt.xlim(0,1)
+n, bins, patches = plt.hist(terminalx0, 4)
 
 plt.title('ts = '+ str(trials - 1)+ ','+' N = '+ str(iter), color='k')
 

@@ -110,6 +110,8 @@ for j in range(iter + 1):
     terminalx0.append(x0_values[trials - 1])
 
 # plot the list in histogram
+
+plt.xlim(0,1)
 n, bins, patches = plt.hist(terminalx0, 15, normed = 1)
 
 plt.title('ts = '+ str(trials - 1)+ ','+' N = '+ str(iter), color='k')
