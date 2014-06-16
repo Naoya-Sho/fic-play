@@ -31,20 +31,20 @@ def pay1(a,b):
 
 # best response function using the payoff function 
 def br0(x):
-    if x * pay0(0,0) + (1-x) * pay0(0,1) > x * pay0(1,0) + (1-x) * pay0(1,1):
+    if (1-x) * pay0(0,0) + x * pay0(0,1) > (1-x) * pay0(1,0) + x * pay0(1,1):
         return 0
 
-    elif x * pay0(0,0) + (1-x) * pay0(0,1) < x * pay0(1,0) + (1-x) * pay0(1,1):
+    elif (1-x) * pay0(0,0) + x * pay0(0,1) < (1-x) * pay0(1,0) + x * pay0(1,1):
         return 1
 
     else:
         return random.randint(0,1)
 
 def br1(x):
-    if x * pay1(0,0) + (1-x) * pay1(1,0) > x * pay1(0,1) + (1-x) * pay1(1,1):
+    if (1-x) * pay1(0,0) + x * pay1(1,0) > (1-x) * pay1(0,1) + x * pay1(1,1):
         return 0
 
-    elif x * pay1(0,0) + (1-x) * pay1(1,0) < x * pay1(0,1) + (1-x) * pay1(1,1):
+    elif (1-x) * pay1(0,0) + x * pay1(1,0) < (1-x) * pay1(0,1) + x * pay1(1,1):
         return 1
 
     else:

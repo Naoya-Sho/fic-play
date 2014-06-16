@@ -10,13 +10,11 @@ fig, ax = plt.subplots()
 players = [0,1] 
 gamename = '2coordgame'
 
-trials = 1001
+trials = 201
 current_x0 = random.uniform(0,1)
 current_x1 = random.uniform(0,1)
 
 # setting up the payoff function
-
-
 
 def pay0(a,b):
     if a == 0 and b == 0:
@@ -41,20 +39,20 @@ def pay1(b,a):
 
 # best response function using the payoff function 
 def br0(x):
-    if x * pay0(0,0) + (1-x) * pay0(0,1) > x * pay0(1,0) + (1-x) * pay0(1,1):
+    if (1-x) * pay0(0,0) + x * pay0(0,1) > (1-x) * pay0(1,0) + x * pay0(1,1):
         return 0
 
-    elif x * pay0(0,0) + (1-x) * pay0(0,1) < x * pay0(1,0) + (1-x) * pay0(1,1):
+    elif (1-x) * pay0(0,0) + x * pay0(0,1) < (1-x) * pay0(1,0) + x * pay0(1,1):
         return 1
 
     else:
         return random.randint(0,1)
 
 def br1(x):
-    if x * pay1(0,0) + (1-x) * pay1(1,0) > x * pay1(0,1) + (1-x) * pay1(1,1):
+    if (1-x) * pay1(0,0) + x * pay1(1,0) > (1-x) * pay1(0,1) + x * pay1(1,1):
         return 0
 
-    elif x * pay1(0,0) + (1-x) * pay1(1,0) < x * pay1(0,1) + (1-x) * pay1(1,1):
+    elif (1-x) * pay1(0,0) + x * pay1(1,0) < (1-x) * pay1(0,1) + x * pay1(1,1):
         return 1
 
     else:
@@ -89,7 +87,7 @@ plt.close()
 ## plot the histogram and save the figure
 # make a list of x0(T-1)
 
-iter = 100
+iter = 200
 terminalx0 = []
 
 for j in range(iter + 1):
