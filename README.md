@@ -19,3 +19,5 @@
 <br>
 <br>
 <img src="2coordgame_hist50_200.png" alt="CO_histogram" width="330"/>
+
+[背景とコードの説明](https://docs.google.com/viewer?url=https://github.com/Naoya-Sho/fic-play/blob/master/Fictitiousplay_slides.pdf?raw=true)
